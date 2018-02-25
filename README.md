@@ -25,3 +25,22 @@ Instead of predicting the dog and cat datasets as a whole, I predict them sepera
 Besides Random Forest, I also tried Logistical Regression, ExtraTree Classifier, gradientBoosting Classifier. The performance of gradientBoosting Classifier is the best among all. 
 
 At last, I used a simple ensemble by assigning two different weights (0.7,0.3) to outputs from Random Forest and gradientBoosting Classifer and it gave me the final score of 0.71425.
+
+##File Descriptions:
+
+**data_preprocessing.py**: It includes how to handle missing values, contruction of new features and which features are used in cat dataset and/or dog dataset.
+
+**EDA.py**: Methods to do basic exploratory data analysis. 
+
+**ExtraTreeClassifier.py**: The construction of Extra Tree classifier and how to tune its hyperparameters. It is not included in my                                 final output.
+
+**gradientBoostingClassifier.py**: The construction of gradientBoosting classifier and how to tune its hyper parameters.
+
+**Logistic_Regression.py**: The construction of Logistical Regression and how to tune its parameters. It is not included in my final output. 
+
+**randomForest.py**: The construction of Random Forest and how to tune its hyperparameters. 
+
+**method_combinations.py**: The simple ensemble method to conbine the outputs from Random Forest and gradientBoosting Classifier with suitable weights. This is the final output.
+
+**Note that** All the models used to predict the probabilities of dag and cat seperately. 
+
